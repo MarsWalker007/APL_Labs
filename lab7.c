@@ -11,7 +11,7 @@ void fill (int n, int m, int a[n][m])
     }
 }
 
-void kazah (int n, int m, int A[][m])
+void one (int n, int m, int A[][m])
 {
     for (int i = 0; i < n; i++)
     {
@@ -21,7 +21,7 @@ void kazah (int n, int m, int A[][m])
     }
     printf("\n");
 }
-void uzbek (int n, int m, int A[][m], int O[])
+void two (int n, int m, int A[][m], int O[])
 {
     for (int j = 0; j < m; j++)
     {
@@ -36,7 +36,7 @@ void uzbek (int n, int m, int A[][m], int O[])
     }
     printf("\n");
 }
-void kirgiz (int n, int m, int A[][m], int O[])
+void three (int n, int m, int A[][m], int O[])
 {
     int min = 50;
     for (int i = 0; i < m; i++)
@@ -57,10 +57,10 @@ int main()
     scanf("%d", &m);
     int A[n][m], O[m];
     fill(n, m, A);
-    kazah(n, m, A);
+    one(n, m, A);
     printf("\n");
-    uzbek(n, m, A, O);
-    kirgiz(n, m, A, O);
+    two(n, m, A, O);
+    three(n, m, A, O);
     printf("\n");
     return 0;
 }
