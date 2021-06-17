@@ -11,7 +11,7 @@ void fill(int n, int m, int **a)
     }
 }
 
-void mew(int n, int m, int **A)
+void one(int n, int m, int **A)
 {
     for (int i = 0; i < n; i++)
     {
@@ -21,7 +21,7 @@ void mew(int n, int m, int **A)
     }
     printf("\n");
 }
-void slon(int n, int m, int **A, int *O)
+void two(int n, int m, int **A, int *O)
 {
     for (int j = 0; j < m; j++)
     {
@@ -36,7 +36,7 @@ void slon(int n, int m, int **A, int *O)
     }
     printf("\n");
 }
-void salam(int n, int m, int **A, int *O)
+void three(int n, int m, int **A, int *O)
 {
     int min = 50;
     for (int i = 0; i < m; i++)
@@ -72,10 +72,10 @@ int main()
     }
     int *O = (int *) malloc (m *sizeof(int));
     fill(n, m, A);
-    mew(n, m, A);
+    one(n, m, A);
     printf("\n");
-    slon(n, m, A, O);
-    salam(n, m, A, O);
+    two(n, m, A, O);
+    three(n, m, A, O);
     printf("\n");
     for(int i = 0; i < n; i++)
         free(A[i]);
